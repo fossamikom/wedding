@@ -1,0 +1,247 @@
+@import url('normalize.css');
+
+body{
+	background-image: url(../images/bg.jpg); 
+	font-family: 'Open Sans Condensed','Arial Narrow', serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	overflow-y: scroll;
+	overflow-x: hidden;
+    min-height: 100%
+}
+a{
+	color: #555;
+	text-decoration: none;
+}
+.container{
+	width: 100%;
+	position: relative;
+}
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+.main{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.container > header{
+	margin: 10px;
+	padding: 20px 10px 10px 10px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.container > header h1{
+	font-size: 36px;
+	line-height: 36px;
+	margin: 0;
+	position: relative;
+	font-weight: 300;
+	color: #666;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
+.container > header h2{
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0;
+	padding: 15px 0 5px 0;
+	color: #555;
+	position: relative;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
+}
+
+/* Buttons Style */
+.buttons{
+    text-align:center;
+	display: block;
+	line-height: 30px;
+	padding: 5px 0px;
+}
+.buttons a{
+    display: inline-block;
+	font-style: italic;
+	margin: 0px 4px;
+	padding: 0px 6px;
+	color: #aaa;
+	line-height: 20px;	
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+	border: 1px solid #fff;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.buttons a:hover{
+	color: #333;
+	background: #fff;
+}
+.buttons a:active{
+	background: #fff;
+}
+.buttons a.current,
+.buttons a.current:hover{
+	background: #f0f0f0;
+	border-color: #d9d9d9;
+	color: #aaa;
+	box-shadow: 0 1px 1px rgba(255,255,255,0.7);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+} /*End buttons*/
+
+
+.support-note span{
+	color: #ac375d;
+	font-size: 16px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions{
+	display: block;
+}
+.cs-text {
+	font-size: 50px;
+	text-transform: uppercase;
+	margin: 80px auto 0 auto;
+	width: 580px;
+	height: 100px;
+	padding-left: 20px;
+	font-family: 'McLaren', Arial;
+	font-weight: 400;
+	position: relative;
+}
+
+/* Micro clearfix hack by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cs-text:before,
+.cs-text:after {
+	content: " ";
+    display: table;
+}
+
+.cs-text:after {
+	clear: both;
+}
+/* end clearfix hack */
+
+.cs-text span {
+	cursor: default;
+	display: block;
+	float: left;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 0 0 0 -20px;
+	color: rgba(255,255,255,0.95);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.cs-text span:nth-child(odd) {
+	background: rgba(118,176,204, 0.8) url(../images/noise.png); 
+}
+
+.cs-text span:nth-child(even) {
+	background: rgba(58,126,162, 0.8) url(../images/noise.png); 
+}
+
+.cs-text span:nth-child(1) {
+	-webkit-transform: translate(300%) translate(-60px);
+	-moz-transform: translate(300%) translate(-60px);
+	-o-transform: translate(300%) translate(-60px);
+	-ms-transform: translate(300%) translate(-60px);
+	transform: translate(300%) translate(-60px);
+}
+
+.cs-text span:nth-child(2) {
+	-webkit-transform: translate(200%) translate(-40px);
+	-moz-transform: translate(200%) translate(-40px);
+	-o-transform: translate(200%) translate(-40px);
+	-ms-transform: translate(200%) translate(-40px);
+	transform: translate(200%) translate(-40px);
+}
+
+.cs-text span:nth-child(3) {
+	-webkit-transform: translate(100%) translate(-20px);
+	-moz-transform: translate(100%) translate(-20px);
+	-o-transform: translate(100%) translate(-20px);
+	-ms-transform: translate(100%) translate(-20px);
+	transform: translate(100%) translate(-20px);
+}
+
+.cs-text span:nth-child(5) {
+	-webkit-transform: translate(-100%) translate(20px);
+	-moz-transform: translate(-100%) translate(20px);
+	-o-transform: translate(-100%) translate(20px);
+	-ms-transform: translate(-100%) translate(20px);
+	transform: translate(-100%) translate(20px);
+}
+
+.cs-text span:nth-child(6) {
+	-webkit-transform: translate(-200%) translate(40px);
+	-moz-transform: translate(-200%) translate(40px);
+	-o-transform: translate(-200%) translate(40px);
+	-ms-transform: translate(-200%) translate(40px);
+	transform: translate(-200%) translate(40px);
+}
+
+.cs-text span:nth-child(7) {
+	-webkit-transform: translate(-300%) translate(60px);
+	-moz-transform: translate(-300%) translate(60px);
+	-o-transform: translate(-300%) translate(60px);
+	-ms-transform: translate(-300%) translate(60px);
+	transform: translate(-300%) translate(60px);
+}
+
+.cs-text span:not(:last-child) {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.cs-text span:last-child{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 100;
+	background: url(../images/logo.jpg) no-repeat center center;
+}
+
+.cs-text:hover span:not(:last-child){
+	-webkit-transform: translate(0%);
+	-moz-transform: translate(0%);
+	-o-transform: translate(0%);
+	-ms-transform: translate(0%);
+	transform: translate(0%);
+	opacity: 1;
+}
+
+.cs-text:hover span:last-child {
+	opacity: 0;
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
+}
